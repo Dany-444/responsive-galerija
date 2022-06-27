@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija-slika</title>
+    
+    <style>
+        body{            
+            margin: 0px auto;
+            font-family: sans-serif;
+        }
+        :root{
+            --primary-dark-color: red;
+        }
+        .omotač{
+            margin: 5px;
+            padding: 20px;
+            border: 5px solid var(--primary-dark-color);
+        }                            
+        h1{
+            text-align: center;
+            color: var(--primary-dark-color)
+        }                                                            
+        .flexbox{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);            
+            place-items: center;
+            place-content: center;
+            text-align: center;
+            gap: 20px;            
+            padding: 15;            
+        }
+        .red{
+            background-color: blue;                                                            
+            border-top: 2px solid var(--primary-dark-color);
+            border-left: 2px solid var(--primary-dark-color);
+            border-right: 2px solid var(--primary-dark-color);
+        }
+        .kolona{
+            background-image: url(placeholder-image.png);            
+            background-size: 100%;
+            width: 100px;            
+            background-re00peat: no-repeat;
+            border-radius: 20px;
+            padding-top: 30px;                        
+        }
+        .div-tekst{
+                background-color: var(--primary-dark-color);
+                color: wheat;
+        }
+        footer{
+            background-color: var(--primary-dark-color);
+            margin: 15px            
+        }
+        p{
+            padding: 10px;
+            border: 2px solid blue;
+            color: wheat;
+            background-color: var(--primary-dark-color);
+        }
+        img{
+            width: 50%;                                    
+        }                                                                
+        
+        
+        @media screen and (max-width: 1024px) {
+        .flexbox{
+        grid-template-columns: repeat(5, 1fr);
+        }
+        }                        
+        @media screen and (max-width: 768px) {
+        .flexbox{
+        grid-template-columns: repeat(3, 1fr);
+        }
+        }        
+        @media screen and (max-width: 414px) {
+        .flexbox{
+        grid-template-columns: repeat(1, 1fr);
+        }
+        }        
+
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="omotač">
+
+        <header><h1>Galerija slika</h1></header>
+
+        <div class="flexbox">
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="Pozadinska ikonica">
+                    <div class="div-tekst">Slika 1</div>
+                </div>
+            </div>    
+                
+            
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="Pozadinska ikonica">
+                    <div class="div-tekst">Slika 2</div>
+                </div>
+            </div>
+
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="">
+                    <div class="div-tekst">Slika 3</div>
+                </div>
+            </div>
+
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="">
+                    <div class="div-tekst">Slika 4</div>
+                </div>
+            </div>
+
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="">
+                    <div class="div-tekst">Slika 5</div>
+                </div>
+            </div>
+
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="">
+                    <div class="div-tekst">Slika 6</div>
+                </div>
+            </div>
+
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="">
+                    <div class="div-tekst">Slika 7</div>
+                </div>
+            </div>
+
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="">
+                    <div class="div-tekst">Slika 8</div>
+                </div>
+            </div>
+
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="">
+                    <div class="div-tekst">Slika 9</div>
+                </div>
+            </div>
+
+            <div class="red">
+                <div class="kolona">
+                    <img src="placeholder-image.png" alt="">
+                    <div class="div-tekst">Slika 10</div>
+                </div>
+            </div>
+        </div>            
+            
+        
+        <footer>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure debitis quae doloremque beatae neque, iste consequatur sapiente nihil eius impedit modi adipisci? Unde eveniet exercitationem excepturi rem voluptate. Ipsam!100  </p>
+        </footer>
+    
+    </div>                            
+</body>
+</html>
